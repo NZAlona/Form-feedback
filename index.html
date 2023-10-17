@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <p class="text-title">
+        Thanks for visiting our website! <span class="span-text"></span>Please leave a comments
+        regarding your recent experience with us
+      </p>
+      <form class="form-feedback js-form">
+        <label for="info" class="comments">User details</label>
+        <input
+          type="text"
+          name="userName"
+          id="info"
+          class="input-field"
+          placeholder="Name"
+          required
+          pattern="[A-Za-z]{1,32}"
+        />
+
+        <label for="msg" class="comments">Comments</label>
+        <textarea
+          name="message"
+          class="textarea-field"
+          placeholder="Message"
+          id="msg"
+          required
+        ></textarea>
+        <p class="text-rate">Click below to rate (1-5):</p>
+        <div class="wrapper">
+          <input type="radio" id="1" name="rating" />
+          <label for="1" class="radio-label"></label>
+          <input type="radio" id="2" name="rating" />
+          <label for="2" class="radio-label"></label>
+          <input type="radio" id="3" name="rating" />
+          <label for="3" class="radio-label"></label>
+          <input type="radio" id="4" name="rating" />
+          <label for="4" class="radio-label"></label>
+          <input type="radio" id="5" name="rating" />
+          <label for="5" class="radio-label"></label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="./tasks.js"></script>
+  </body>
+</html>

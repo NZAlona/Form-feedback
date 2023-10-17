@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Form */
+
+.form-container {
+  max-width: 528px;
+  max-height: 980px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #04befe;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-container {
+    max-height: 880px;
+  }
+}
+.text-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.span-text {
+  display: block;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0px;
+  line-height: 1.15;
+  font-size: 100%;
+}
+
+.input-field {
+  border: 1px solid;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  height: 40px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  outline: 1px solid lightblue;
+  border: none;
+}
+.textarea-field {
+  height: 120px;
+  resize: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: smaller;
+}
+
+.comments {
+  font-size: 12px;
+  margin-bottom: 4px;
+  letter-spacing: 0.01rem;
+  line-height: 1.17;
+  font-weight: bold;
+}
+
+.btn {
+  align-self: center;
+  min-width: 145px;
+  padding: 8px 12px 8px 12px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(to right, lightblue, blue, lightblue);
+
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.8;
+}
+
+/* Rating  */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.wrapper > input {
+  display: none;
+}
+
+.radio-label {
+  cursor: pointer;
+  display: block;
+  color: #ffd700;
+}
+
+.radio-label:before {
+  content: '\2606';
+  font-size: 38px;
+  display: inline-block;
+}
+
+.radio-label:hover:before {
+  content: '\2605';
+  color: #ffd700;
+}
+
+input:checked ~ .radio-label:before {
+  content: '\2605';
+  color: #ffd700;
+}
+.text-rate {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
