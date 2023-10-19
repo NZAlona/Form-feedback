@@ -139,6 +139,7 @@ input:checked ~ .radio-label:before {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
+  font-weight: bold;
 }
 
 /* Notification */
@@ -152,7 +153,7 @@ input:checked ~ .radio-label:before {
 @media screen and (min-width: 1119px) {
   .wrapper1 {
     top: 20%;
-    left: 85%;
+    left: 80%;
   }
 }
 .is-hidden {
