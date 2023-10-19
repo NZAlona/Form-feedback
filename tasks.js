@@ -1,5 +1,6 @@
 const refs = {
   form: document.querySelector('.js-form'),
+  notification: document.querySelector('.wrapper1'),
 };
 
 refs.form.elements.message.value = localStorage.getItem('TextFeedback') ?? '';
@@ -21,4 +22,8 @@ function onFormSubmit(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
   localStorage.clear();
+  refs.notification.classList.remove('is-hidden');
+  setTimeout(() => {
+    refs.notification.classList.add('is-hidden');
+  }, 2500);
 }

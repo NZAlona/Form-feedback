@@ -140,3 +140,37 @@ input:checked ~ .radio-label:before {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
 }
+
+/* Notification */
+.wrapper1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1119px) {
+  .wrapper1 {
+    top: 20%;
+    left: 85%;
+  }
+}
+.is-hidden {
+  display: none;
+}
+.wrapper-message::before {
+  content: '\2713';
+  font-size: 30px;
+  vertical-align: middle;
+}
+.wrapper-message {
+  width: 220px;
+  max-height: 85px;
+  background-color: rgb(66, 227, 66);
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  line-height: 1.17;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 3px;
+}
