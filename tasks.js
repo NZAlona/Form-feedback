@@ -22,6 +22,7 @@ function onFormSubmit(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
   localStorage.clear();
+
   refs.notification.classList.remove('is-hidden');
   setTimeout(() => {
     refs.notification.classList.add('is-hidden');
